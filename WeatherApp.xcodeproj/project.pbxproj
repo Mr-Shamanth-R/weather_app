@@ -13,6 +13,14 @@
 		03D8CFA42D48D63D00FC9B08 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 03D8CFA32D48D63D00FC9B08 /* Base */; };
 		03D8CFA62D48D63E00FC9B08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D8CFA52D48D63E00FC9B08 /* Assets.xcassets */; };
 		03D8CFA92D48D63E00FC9B08 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 03D8CFA82D48D63E00FC9B08 /* Base */; };
+		03D8CFB42D4913DB00FC9B08 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8CFB22D4913DB00FC9B08 /* WeatherTableViewCell.swift */; };
+		03D8CFB52D4913DB00FC9B08 /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D8CFB32D4913DB00FC9B08 /* WeatherTableViewCell.xib */; };
+		03D8CFB82D4913F400FC9B08 /* HourlyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8CFB62D4913F400FC9B08 /* HourlyTableViewCell.swift */; };
+		03D8CFB92D4913F400FC9B08 /* HourlyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D8CFB72D4913F400FC9B08 /* HourlyTableViewCell.xib */; };
+		03D8CFBB2D492A2400FC9B08 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8CFBA2D492A2400FC9B08 /* WeatherModel.swift */; };
+		03D8CFBE2D49411F00FC9B08 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 03D8CFBD2D49411F00FC9B08 /* Kingfisher */; };
+		03D8CFC82D4D193100FC9B08 /* WeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D8CFC72D4D193100FC9B08 /* WeatherCollectionViewCell.xib */; };
+		03D8CFC92D4D193100FC9B08 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8CFC62D4D193100FC9B08 /* WeatherCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,13 @@
 		03D8CFA52D48D63E00FC9B08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03D8CFA82D48D63E00FC9B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03D8CFAA2D48D63E00FC9B08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03D8CFB22D4913DB00FC9B08 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		03D8CFB32D4913DB00FC9B08 /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
+		03D8CFB62D4913F400FC9B08 /* HourlyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyTableViewCell.swift; sourceTree = "<group>"; };
+		03D8CFB72D4913F400FC9B08 /* HourlyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyTableViewCell.xib; sourceTree = "<group>"; };
+		03D8CFBA2D492A2400FC9B08 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		03D8CFC62D4D193100FC9B08 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		03D8CFC72D4D193100FC9B08 /* WeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D8CFBE2D49411F00FC9B08 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +72,9 @@
 		03D8CF9B2D48D63D00FC9B08 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				03D8CFC52D4D190600FC9B08 /* CollectionViewCell */,
+				03D8CFB12D4913AB00FC9B08 /* HourlyCollectionCell */,
+				03D8CFB02D4913A000FC9B08 /* WeatherCell */,
 				03D8CF9C2D48D63D00FC9B08 /* AppDelegate.swift */,
 				03D8CF9E2D48D63D00FC9B08 /* SceneDelegate.swift */,
 				03D8CFA02D48D63D00FC9B08 /* ViewController.swift */,
@@ -63,8 +82,36 @@
 				03D8CFA52D48D63E00FC9B08 /* Assets.xcassets */,
 				03D8CFA72D48D63E00FC9B08 /* LaunchScreen.storyboard */,
 				03D8CFAA2D48D63E00FC9B08 /* Info.plist */,
+				03D8CFBA2D492A2400FC9B08 /* WeatherModel.swift */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		03D8CFB02D4913A000FC9B08 /* WeatherCell */ = {
+			isa = PBXGroup;
+			children = (
+				03D8CFB22D4913DB00FC9B08 /* WeatherTableViewCell.swift */,
+				03D8CFB32D4913DB00FC9B08 /* WeatherTableViewCell.xib */,
+			);
+			path = WeatherCell;
+			sourceTree = "<group>";
+		};
+		03D8CFB12D4913AB00FC9B08 /* HourlyCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				03D8CFB62D4913F400FC9B08 /* HourlyTableViewCell.swift */,
+				03D8CFB72D4913F400FC9B08 /* HourlyTableViewCell.xib */,
+			);
+			path = HourlyCollectionCell;
+			sourceTree = "<group>";
+		};
+		03D8CFC52D4D190600FC9B08 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				03D8CFC62D4D193100FC9B08 /* WeatherCollectionViewCell.swift */,
+				03D8CFC72D4D193100FC9B08 /* WeatherCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +130,9 @@
 			dependencies = (
 			);
 			name = WeatherApp;
+			packageProductDependencies = (
+				03D8CFBD2D49411F00FC9B08 /* Kingfisher */,
+			);
 			productName = WeatherApp;
 			productReference = 03D8CF992D48D63D00FC9B08 /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +161,9 @@
 				Base,
 			);
 			mainGroup = 03D8CF902D48D63D00FC9B08;
+			packageReferences = (
+				03D8CFBC2D49411F00FC9B08 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 03D8CF9A2D48D63D00FC9B08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +178,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D8CFB52D4913DB00FC9B08 /* WeatherTableViewCell.xib in Resources */,
+				03D8CFB92D4913F400FC9B08 /* HourlyTableViewCell.xib in Resources */,
 				03D8CFA62D48D63E00FC9B08 /* Assets.xcassets in Resources */,
 				03D8CFA92D48D63E00FC9B08 /* Base in Resources */,
 				03D8CFA42D48D63D00FC9B08 /* Base in Resources */,
+				03D8CFC82D4D193100FC9B08 /* WeatherCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D8CFB42D4913DB00FC9B08 /* WeatherTableViewCell.swift in Sources */,
 				03D8CFA12D48D63D00FC9B08 /* ViewController.swift in Sources */,
+				03D8CFB82D4913F400FC9B08 /* HourlyTableViewCell.swift in Sources */,
 				03D8CF9D2D48D63D00FC9B08 /* AppDelegate.swift in Sources */,
+				03D8CFBB2D492A2400FC9B08 /* WeatherModel.swift in Sources */,
 				03D8CF9F2D48D63D00FC9B08 /* SceneDelegate.swift in Sources */,
+				03D8CFC92D4D193100FC9B08 /* WeatherCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +421,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03D8CFBC2D49411F00FC9B08 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03D8CFBD2D49411F00FC9B08 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03D8CFBC2D49411F00FC9B08 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 03D8CF912D48D63D00FC9B08 /* Project object */;
 }
